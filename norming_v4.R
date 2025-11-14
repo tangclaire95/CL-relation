@@ -35,7 +35,6 @@ myMergedData <- do.call(rbind, lapply(file_paths, function(file) {
 
 
 
-
 # Filter out the unneeded rows and columns
 columns_to_keep <- c("trial_type", "trial_index", "time_elapsed", "rt", "response", "task", "clType", "clExemplar", "clSide", "containerType", "containerDirection", "blockNumber", "version", "curTrialNum")
 df1 <- myMergedData [ , columns_to_keep] #filter columns
